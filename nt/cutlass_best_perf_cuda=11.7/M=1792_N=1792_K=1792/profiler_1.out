@@ -1,0 +1,534 @@
+
+
+
+=============================
+  Problem ID: 1
+
+        Provider: [1;37mCUTLASS[0m
+   OperationKind: [1;37mgemm[0m
+       Operation: cutlass_simt_sgemm_128x128_8x2_nt_align1
+
+          Status: [1;37mSuccess[0m
+    Verification: [1;37mON[0m
+     Disposition: [1;32mPassed[0m
+
+reference_device: Passed
+          cuBLAS: Passed
+
+       Arguments: --gemm_kind=universal --split_k_mode=serial --m=1792 --n=1792 --k=1792 --A=f32:column --B=f32:row --C=f32:column  \
+                  --alpha=1 --beta=0 --split_k_slices=1 --batch_count=1 --op_class=simt --accum=f32 --cta_m=128 --cta_n=128  \
+                  --cta_k=8 --stages=2 --warps_m=4 --warps_n=2 --warps_k=1 --inst_m=1 --inst_n=1 --inst_k=1 --min_cc=50  \
+                  --max_cc=1024
+
+           Bytes: 38535168  bytes
+           FLOPs: 11515592704  flops
+           FLOPs/Byte: 298
+
+         Runtime: 0.563251  ms
+          Memory: 63.717 GiB/s
+
+            Math: 20444.9 GFLOP/s
+
+
+
+=============================
+  Problem ID: 1
+
+        Provider: [1;37mCUTLASS[0m
+   OperationKind: [1;37mgemm[0m
+       Operation: cutlass_simt_sgemm_128x64_8x2_nt_align1
+
+          Status: [1;37mSuccess[0m
+    Verification: [1;37mON[0m
+     Disposition: [1;32mPassed[0m
+
+reference_device: Passed
+          cuBLAS: Passed
+
+       Arguments: --gemm_kind=universal --split_k_mode=serial --m=1792 --n=1792 --k=1792 --A=f32:column --B=f32:row --C=f32:column  \
+                  --alpha=1 --beta=0 --split_k_slices=1 --batch_count=1 --op_class=simt --accum=f32 --cta_m=128 --cta_n=64  \
+                  --cta_k=8 --stages=2 --warps_m=2 --warps_n=2 --warps_k=1 --inst_m=1 --inst_n=1 --inst_k=1 --min_cc=50  \
+                  --max_cc=1024
+
+           Bytes: 38535168  bytes
+           FLOPs: 11515592704  flops
+           FLOPs/Byte: 298
+
+         Runtime: 0.623933  ms
+          Memory: 57.52 GiB/s
+
+            Math: 18456.4 GFLOP/s
+
+
+
+=============================
+  Problem ID: 1
+
+        Provider: [1;37mCUTLASS[0m
+   OperationKind: [1;37mgemm[0m
+       Operation: cutlass_simt_sgemm_64x128_8x2_nt_align1
+
+          Status: [1;37mSuccess[0m
+    Verification: [1;37mON[0m
+     Disposition: [1;32mPassed[0m
+
+reference_device: Passed
+          cuBLAS: Passed
+
+       Arguments: --gemm_kind=universal --split_k_mode=serial --m=1792 --n=1792 --k=1792 --A=f32:column --B=f32:row --C=f32:column  \
+                  --alpha=1 --beta=0 --split_k_slices=1 --batch_count=1 --op_class=simt --accum=f32 --cta_m=64 --cta_n=128  \
+                  --cta_k=8 --stages=2 --warps_m=2 --warps_n=2 --warps_k=1 --inst_m=1 --inst_n=1 --inst_k=1 --min_cc=50  \
+                  --max_cc=1024
+
+           Bytes: 38535168  bytes
+           FLOPs: 11515592704  flops
+           FLOPs/Byte: 298
+
+         Runtime: 0.631429  ms
+          Memory: 56.8372 GiB/s
+
+            Math: 18237.3 GFLOP/s
+
+
+
+=============================
+  Problem ID: 1
+
+        Provider: [1;37mCUTLASS[0m
+   OperationKind: [1;37mgemm[0m
+       Operation: cutlass_simt_sgemm_64x64_8x2_nt_align1
+
+          Status: [1;37mSuccess[0m
+    Verification: [1;37mON[0m
+     Disposition: [1;32mPassed[0m
+
+reference_device: Passed
+          cuBLAS: Passed
+
+       Arguments: --gemm_kind=universal --split_k_mode=serial --m=1792 --n=1792 --k=1792 --A=f32:column --B=f32:row --C=f32:column  \
+                  --alpha=1 --beta=0 --split_k_slices=1 --batch_count=1 --op_class=simt --accum=f32 --cta_m=64 --cta_n=64  \
+                  --cta_k=8 --stages=2 --warps_m=2 --warps_n=1 --warps_k=1 --inst_m=1 --inst_n=1 --inst_k=1 --min_cc=50  \
+                  --max_cc=1024
+
+           Bytes: 38535168  bytes
+           FLOPs: 11515592704  flops
+           FLOPs/Byte: 298
+
+         Runtime: 0.653261  ms
+          Memory: 54.9377 GiB/s
+
+            Math: 17627.9 GFLOP/s
+
+
+
+=============================
+  Problem ID: 1
+
+        Provider: [1;37mCUTLASS[0m
+   OperationKind: [1;37mgemm[0m
+       Operation: cutlass_simt_sgemm_128x32_8x2_nt_align1
+
+          Status: [1;37mSuccess[0m
+    Verification: [1;37mON[0m
+     Disposition: [1;32mPassed[0m
+
+reference_device: Passed
+          cuBLAS: Passed
+
+       Arguments: --gemm_kind=universal --split_k_mode=serial --m=1792 --n=1792 --k=1792 --A=f32:column --B=f32:row --C=f32:column  \
+                  --alpha=1 --beta=0 --split_k_slices=1 --batch_count=1 --op_class=simt --accum=f32 --cta_m=128 --cta_n=32  \
+                  --cta_k=8 --stages=2 --warps_m=2 --warps_n=1 --warps_k=1 --inst_m=1 --inst_n=1 --inst_k=1 --min_cc=50  \
+                  --max_cc=1024
+
+           Bytes: 38535168  bytes
+           FLOPs: 11515592704  flops
+           FLOPs/Byte: 298
+
+         Runtime: 0.725289  ms
+          Memory: 49.4819 GiB/s
+
+            Math: 15877.2 GFLOP/s
+
+
+
+=============================
+  Problem ID: 1
+
+        Provider: [1;37mCUTLASS[0m
+   OperationKind: [1;37mgemm[0m
+       Operation: cutlass_simt_sgemm_32x128_8x2_nt_align1
+
+          Status: [1;37mSuccess[0m
+    Verification: [1;37mON[0m
+     Disposition: [1;32mPassed[0m
+
+reference_device: Passed
+          cuBLAS: Passed
+
+       Arguments: --gemm_kind=universal --split_k_mode=serial --m=1792 --n=1792 --k=1792 --A=f32:column --B=f32:row --C=f32:column  \
+                  --alpha=1 --beta=0 --split_k_slices=1 --batch_count=1 --op_class=simt --accum=f32 --cta_m=32 --cta_n=128  \
+                  --cta_k=8 --stages=2 --warps_m=1 --warps_n=2 --warps_k=1 --inst_m=1 --inst_n=1 --inst_k=1 --min_cc=50  \
+                  --max_cc=1024
+
+           Bytes: 38535168  bytes
+           FLOPs: 11515592704  flops
+           FLOPs/Byte: 298
+
+         Runtime: 0.812082  ms
+          Memory: 44.1934 GiB/s
+
+            Math: 14180.3 GFLOP/s
+
+
+
+=============================
+  Problem ID: 1
+
+        Provider: [1;37mCUTLASS[0m
+   OperationKind: [1;37mgemm[0m
+       Operation: cutlass_simt_sgemm_256x128_8x5_nt_align1
+
+          Status: [1;37mSuccess[0m
+    Verification: [1;37mON[0m
+     Disposition: [1;32mPassed[0m
+
+reference_device: Passed
+          cuBLAS: Passed
+
+       Arguments: --gemm_kind=universal --split_k_mode=serial --m=1792 --n=1792 --k=1792 --A=f32:column --B=f32:row --C=f32:column  \
+                  --alpha=1 --beta=0 --split_k_slices=1 --batch_count=1 --op_class=simt --accum=f32 --cta_m=256 --cta_n=128  \
+                  --cta_k=8 --stages=5 --warps_m=4 --warps_n=2 --warps_k=1 --inst_m=1 --inst_n=1 --inst_k=1 --min_cc=50  \
+                  --max_cc=1024
+
+           Bytes: 38535168  bytes
+           FLOPs: 11515592704  flops
+           FLOPs/Byte: 298
+
+         Runtime: 0.657265  ms
+          Memory: 54.6031 GiB/s
+
+            Math: 17520.5 GFLOP/s
+
+
+
+=============================
+  Problem ID: 1
+
+        Provider: [1;37mCUTLASS[0m
+   OperationKind: [1;37mgemm[0m
+       Operation: cutlass_simt_sgemm_128x256_8x5_nt_align1
+
+          Status: [1;37mSuccess[0m
+    Verification: [1;37mON[0m
+     Disposition: [1;32mPassed[0m
+
+reference_device: Passed
+          cuBLAS: Passed
+
+       Arguments: --gemm_kind=universal --split_k_mode=serial --m=1792 --n=1792 --k=1792 --A=f32:column --B=f32:row --C=f32:column  \
+                  --alpha=1 --beta=0 --split_k_slices=1 --batch_count=1 --op_class=simt --accum=f32 --cta_m=128 --cta_n=256  \
+                  --cta_k=8 --stages=5 --warps_m=2 --warps_n=4 --warps_k=1 --inst_m=1 --inst_n=1 --inst_k=1 --min_cc=50  \
+                  --max_cc=1024
+
+           Bytes: 38535168  bytes
+           FLOPs: 11515592704  flops
+           FLOPs/Byte: 298
+
+         Runtime: 0.644987  ms
+          Memory: 55.6425 GiB/s
+
+            Math: 17854 GFLOP/s
+
+
+
+=============================
+  Problem ID: 1
+
+        Provider: [1;37mCUTLASS[0m
+   OperationKind: [1;37mgemm[0m
+       Operation: cutlass_simt_sgemm_128x128_8x5_nt_align1
+
+          Status: [1;37mSuccess[0m
+    Verification: [1;37mON[0m
+     Disposition: [1;32mPassed[0m
+
+reference_device: Passed
+          cuBLAS: Passed
+
+       Arguments: --gemm_kind=universal --split_k_mode=serial --m=1792 --n=1792 --k=1792 --A=f32:column --B=f32:row --C=f32:column  \
+                  --alpha=1 --beta=0 --split_k_slices=1 --batch_count=1 --op_class=simt --accum=f32 --cta_m=128 --cta_n=128  \
+                  --cta_k=8 --stages=5 --warps_m=4 --warps_n=2 --warps_k=1 --inst_m=1 --inst_n=1 --inst_k=1 --min_cc=50  \
+                  --max_cc=1024
+
+           Bytes: 38535168  bytes
+           FLOPs: 11515592704  flops
+           FLOPs/Byte: 298
+
+         Runtime: 0.581796  ms
+          Memory: 61.686 GiB/s
+
+            Math: 19793.2 GFLOP/s
+
+
+
+=============================
+  Problem ID: 1
+
+        Provider: [1;37mCUTLASS[0m
+   OperationKind: [1;37mgemm[0m
+       Operation: cutlass_simt_sgemm_256x128_8x4_nt_align1
+
+          Status: [1;37mSuccess[0m
+    Verification: [1;37mON[0m
+     Disposition: [1;32mPassed[0m
+
+reference_device: Passed
+          cuBLAS: Passed
+
+       Arguments: --gemm_kind=universal --split_k_mode=serial --m=1792 --n=1792 --k=1792 --A=f32:column --B=f32:row --C=f32:column  \
+                  --alpha=1 --beta=0 --split_k_slices=1 --batch_count=1 --op_class=simt --accum=f32 --cta_m=256 --cta_n=128  \
+                  --cta_k=8 --stages=4 --warps_m=4 --warps_n=2 --warps_k=1 --inst_m=1 --inst_n=1 --inst_k=1 --min_cc=50  \
+                  --max_cc=1024
+
+           Bytes: 38535168  bytes
+           FLOPs: 11515592704  flops
+           FLOPs/Byte: 298
+
+         Runtime: 0.656128  ms
+          Memory: 54.6977 GiB/s
+
+            Math: 17550.8 GFLOP/s
+
+
+
+=============================
+  Problem ID: 1
+
+        Provider: [1;37mCUTLASS[0m
+   OperationKind: [1;37mgemm[0m
+       Operation: cutlass_simt_sgemm_128x256_8x4_nt_align1
+
+          Status: [1;37mSuccess[0m
+    Verification: [1;37mON[0m
+     Disposition: [1;32mPassed[0m
+
+reference_device: Passed
+          cuBLAS: Passed
+
+       Arguments: --gemm_kind=universal --split_k_mode=serial --m=1792 --n=1792 --k=1792 --A=f32:column --B=f32:row --C=f32:column  \
+                  --alpha=1 --beta=0 --split_k_slices=1 --batch_count=1 --op_class=simt --accum=f32 --cta_m=128 --cta_n=256  \
+                  --cta_k=8 --stages=4 --warps_m=2 --warps_n=4 --warps_k=1 --inst_m=1 --inst_n=1 --inst_k=1 --min_cc=50  \
+                  --max_cc=1024
+
+           Bytes: 38535168  bytes
+           FLOPs: 11515592704  flops
+           FLOPs/Byte: 298
+
+         Runtime: 0.664627  ms
+          Memory: 53.9982 GiB/s
+
+            Math: 17326.4 GFLOP/s
+
+
+
+=============================
+  Problem ID: 1
+
+        Provider: [1;37mCUTLASS[0m
+   OperationKind: [1;37mgemm[0m
+       Operation: cutlass_simt_sgemm_128x128_8x4_nt_align1
+
+          Status: [1;37mSuccess[0m
+    Verification: [1;37mON[0m
+     Disposition: [1;32mPassed[0m
+
+reference_device: Passed
+          cuBLAS: Passed
+
+       Arguments: --gemm_kind=universal --split_k_mode=serial --m=1792 --n=1792 --k=1792 --A=f32:column --B=f32:row --C=f32:column  \
+                  --alpha=1 --beta=0 --split_k_slices=1 --batch_count=1 --op_class=simt --accum=f32 --cta_m=128 --cta_n=128  \
+                  --cta_k=8 --stages=4 --warps_m=4 --warps_n=2 --warps_k=1 --inst_m=1 --inst_n=1 --inst_k=1 --min_cc=50  \
+                  --max_cc=1024
+
+           Bytes: 38535168  bytes
+           FLOPs: 11515592704  flops
+           FLOPs/Byte: 298
+
+         Runtime: 0.589967  ms
+          Memory: 60.8316 GiB/s
+
+            Math: 19519 GFLOP/s
+
+
+
+=============================
+  Problem ID: 1
+
+        Provider: [1;37mCUTLASS[0m
+   OperationKind: [1;37mgemm[0m
+       Operation: cutlass_simt_sgemm_128x64_8x5_nt_align1
+
+          Status: [1;37mSuccess[0m
+    Verification: [1;37mON[0m
+     Disposition: [1;32mPassed[0m
+
+reference_device: Passed
+          cuBLAS: Passed
+
+       Arguments: --gemm_kind=universal --split_k_mode=serial --m=1792 --n=1792 --k=1792 --A=f32:column --B=f32:row --C=f32:column  \
+                  --alpha=1 --beta=0 --split_k_slices=1 --batch_count=1 --op_class=simt --accum=f32 --cta_m=128 --cta_n=64  \
+                  --cta_k=8 --stages=5 --warps_m=2 --warps_n=2 --warps_k=1 --inst_m=1 --inst_n=1 --inst_k=1 --min_cc=50  \
+                  --max_cc=1024
+
+           Bytes: 38535168  bytes
+           FLOPs: 11515592704  flops
+           FLOPs/Byte: 298
+
+         Runtime: 0.668334  ms
+          Memory: 53.6987 GiB/s
+
+            Math: 17230.3 GFLOP/s
+
+
+
+=============================
+  Problem ID: 1
+
+        Provider: [1;37mCUTLASS[0m
+   OperationKind: [1;37mgemm[0m
+       Operation: cutlass_simt_sgemm_64x128_8x5_nt_align1
+
+          Status: [1;37mSuccess[0m
+    Verification: [1;37mON[0m
+     Disposition: [1;32mPassed[0m
+
+reference_device: Passed
+          cuBLAS: Passed
+
+       Arguments: --gemm_kind=universal --split_k_mode=serial --m=1792 --n=1792 --k=1792 --A=f32:column --B=f32:row --C=f32:column  \
+                  --alpha=1 --beta=0 --split_k_slices=1 --batch_count=1 --op_class=simt --accum=f32 --cta_m=64 --cta_n=128  \
+                  --cta_k=8 --stages=5 --warps_m=2 --warps_n=2 --warps_k=1 --inst_m=1 --inst_n=1 --inst_k=1 --min_cc=50  \
+                  --max_cc=1024
+
+           Bytes: 38535168  bytes
+           FLOPs: 11515592704  flops
+           FLOPs/Byte: 298
+
+         Runtime: 0.608031  ms
+          Memory: 59.0244 GiB/s
+
+            Math: 18939.2 GFLOP/s
+
+
+
+=============================
+  Problem ID: 1
+
+        Provider: [1;37mCUTLASS[0m
+   OperationKind: [1;37mgemm[0m
+       Operation: cutlass_simt_sgemm_64x64_8x5_nt_align1
+
+          Status: [1;37mSuccess[0m
+    Verification: [1;37mON[0m
+     Disposition: [1;32mPassed[0m
+
+reference_device: Passed
+          cuBLAS: Passed
+
+       Arguments: --gemm_kind=universal --split_k_mode=serial --m=1792 --n=1792 --k=1792 --A=f32:column --B=f32:row --C=f32:column  \
+                  --alpha=1 --beta=0 --split_k_slices=1 --batch_count=1 --op_class=simt --accum=f32 --cta_m=64 --cta_n=64  \
+                  --cta_k=8 --stages=5 --warps_m=2 --warps_n=1 --warps_k=1 --inst_m=1 --inst_n=1 --inst_k=1 --min_cc=50  \
+                  --max_cc=1024
+
+           Bytes: 38535168  bytes
+           FLOPs: 11515592704  flops
+           FLOPs/Byte: 298
+
+         Runtime: 0.711823  ms
+          Memory: 50.4179 GiB/s
+
+            Math: 16177.6 GFLOP/s
+
+
+
+=============================
+  Problem ID: 1
+
+        Provider: [1;37mCUTLASS[0m
+   OperationKind: [1;37mgemm[0m
+       Operation: cutlass_simt_sgemm_128x32_8x5_nt_align1
+
+          Status: [1;37mSuccess[0m
+    Verification: [1;37mON[0m
+     Disposition: [1;32mPassed[0m
+
+reference_device: Passed
+          cuBLAS: Passed
+
+       Arguments: --gemm_kind=universal --split_k_mode=serial --m=1792 --n=1792 --k=1792 --A=f32:column --B=f32:row --C=f32:column  \
+                  --alpha=1 --beta=0 --split_k_slices=1 --batch_count=1 --op_class=simt --accum=f32 --cta_m=128 --cta_n=32  \
+                  --cta_k=8 --stages=5 --warps_m=2 --warps_n=1 --warps_k=1 --inst_m=1 --inst_n=1 --inst_k=1 --min_cc=50  \
+                  --max_cc=1024
+
+           Bytes: 38535168  bytes
+           FLOPs: 11515592704  flops
+           FLOPs/Byte: 298
+
+         Runtime: 0.760873  ms
+          Memory: 47.1678 GiB/s
+
+            Math: 15134.7 GFLOP/s
+
+
+
+=============================
+  Problem ID: 1
+
+        Provider: [1;37mCUTLASS[0m
+   OperationKind: [1;37mgemm[0m
+       Operation: cutlass_simt_sgemm_32x128_8x5_nt_align1
+
+          Status: [1;37mSuccess[0m
+    Verification: [1;37mON[0m
+     Disposition: [1;32mPassed[0m
+
+reference_device: Passed
+          cuBLAS: Passed
+
+       Arguments: --gemm_kind=universal --split_k_mode=serial --m=1792 --n=1792 --k=1792 --A=f32:column --B=f32:row --C=f32:column  \
+                  --alpha=1 --beta=0 --split_k_slices=1 --batch_count=1 --op_class=simt --accum=f32 --cta_m=32 --cta_n=128  \
+                  --cta_k=8 --stages=5 --warps_m=1 --warps_n=2 --warps_k=1 --inst_m=1 --inst_n=1 --inst_k=1 --min_cc=50  \
+                  --max_cc=1024
+
+           Bytes: 38535168  bytes
+           FLOPs: 11515592704  flops
+           FLOPs/Byte: 298
+
+         Runtime: 0.795351  ms
+          Memory: 45.1231 GiB/s
+
+            Math: 14478.6 GFLOP/s
+
+
+=============================
+
+CSV Results:
+
+Problem,Provider,OperationKind,Operation,Disposition,Status,gemm_kind,split_k_mode,m,n,k,A,B,C,alpha,beta,split_k_slices,batch_count,op_class,accum,cta_m,cta_n,cta_k,stages,warps_m,warps_n,warps_k,inst_m,inst_n,inst_k,min_cc,max_cc,Bytes,Flops,Flops/Byte,Runtime,GB/s,GFLOPs
+1,CUTLASS,gemm,cutlass_simt_sgemm_128x128_8x2_nt_align1,passed,success,universal,serial,1792,1792,1792,f32:column,f32:row,f32:column,1,0,1,1,simt,f32,128,128,8,2,4,2,1,1,1,1,50,1024,38535168,11515592704,298,0.563251,63.717,20444.9
+1,CUTLASS,gemm,cutlass_simt_sgemm_128x64_8x2_nt_align1,passed,success,universal,serial,1792,1792,1792,f32:column,f32:row,f32:column,1,0,1,1,simt,f32,128,64,8,2,2,2,1,1,1,1,50,1024,38535168,11515592704,298,0.623933,57.52,18456.4
+1,CUTLASS,gemm,cutlass_simt_sgemm_64x128_8x2_nt_align1,passed,success,universal,serial,1792,1792,1792,f32:column,f32:row,f32:column,1,0,1,1,simt,f32,64,128,8,2,2,2,1,1,1,1,50,1024,38535168,11515592704,298,0.631429,56.8372,18237.3
+1,CUTLASS,gemm,cutlass_simt_sgemm_64x64_8x2_nt_align1,passed,success,universal,serial,1792,1792,1792,f32:column,f32:row,f32:column,1,0,1,1,simt,f32,64,64,8,2,2,1,1,1,1,1,50,1024,38535168,11515592704,298,0.653261,54.9377,17627.9
+1,CUTLASS,gemm,cutlass_simt_sgemm_128x32_8x2_nt_align1,passed,success,universal,serial,1792,1792,1792,f32:column,f32:row,f32:column,1,0,1,1,simt,f32,128,32,8,2,2,1,1,1,1,1,50,1024,38535168,11515592704,298,0.725289,49.4819,15877.2
+1,CUTLASS,gemm,cutlass_simt_sgemm_32x128_8x2_nt_align1,passed,success,universal,serial,1792,1792,1792,f32:column,f32:row,f32:column,1,0,1,1,simt,f32,32,128,8,2,1,2,1,1,1,1,50,1024,38535168,11515592704,298,0.812082,44.1934,14180.3
+1,CUTLASS,gemm,cutlass_simt_sgemm_256x128_8x5_nt_align1,passed,success,universal,serial,1792,1792,1792,f32:column,f32:row,f32:column,1,0,1,1,simt,f32,256,128,8,5,4,2,1,1,1,1,50,1024,38535168,11515592704,298,0.657265,54.6031,17520.5
+1,CUTLASS,gemm,cutlass_simt_sgemm_128x256_8x5_nt_align1,passed,success,universal,serial,1792,1792,1792,f32:column,f32:row,f32:column,1,0,1,1,simt,f32,128,256,8,5,2,4,1,1,1,1,50,1024,38535168,11515592704,298,0.644987,55.6425,17854
+1,CUTLASS,gemm,cutlass_simt_sgemm_128x128_8x5_nt_align1,passed,success,universal,serial,1792,1792,1792,f32:column,f32:row,f32:column,1,0,1,1,simt,f32,128,128,8,5,4,2,1,1,1,1,50,1024,38535168,11515592704,298,0.581796,61.686,19793.2
+1,CUTLASS,gemm,cutlass_simt_sgemm_256x128_8x4_nt_align1,passed,success,universal,serial,1792,1792,1792,f32:column,f32:row,f32:column,1,0,1,1,simt,f32,256,128,8,4,4,2,1,1,1,1,50,1024,38535168,11515592704,298,0.656128,54.6977,17550.8
+1,CUTLASS,gemm,cutlass_simt_sgemm_128x256_8x4_nt_align1,passed,success,universal,serial,1792,1792,1792,f32:column,f32:row,f32:column,1,0,1,1,simt,f32,128,256,8,4,2,4,1,1,1,1,50,1024,38535168,11515592704,298,0.664627,53.9982,17326.4
+1,CUTLASS,gemm,cutlass_simt_sgemm_128x128_8x4_nt_align1,passed,success,universal,serial,1792,1792,1792,f32:column,f32:row,f32:column,1,0,1,1,simt,f32,128,128,8,4,4,2,1,1,1,1,50,1024,38535168,11515592704,298,0.589967,60.8316,19519
+1,CUTLASS,gemm,cutlass_simt_sgemm_128x64_8x5_nt_align1,passed,success,universal,serial,1792,1792,1792,f32:column,f32:row,f32:column,1,0,1,1,simt,f32,128,64,8,5,2,2,1,1,1,1,50,1024,38535168,11515592704,298,0.668334,53.6987,17230.3
+1,CUTLASS,gemm,cutlass_simt_sgemm_64x128_8x5_nt_align1,passed,success,universal,serial,1792,1792,1792,f32:column,f32:row,f32:column,1,0,1,1,simt,f32,64,128,8,5,2,2,1,1,1,1,50,1024,38535168,11515592704,298,0.608031,59.0244,18939.2
+1,CUTLASS,gemm,cutlass_simt_sgemm_64x64_8x5_nt_align1,passed,success,universal,serial,1792,1792,1792,f32:column,f32:row,f32:column,1,0,1,1,simt,f32,64,64,8,5,2,1,1,1,1,1,50,1024,38535168,11515592704,298,0.711823,50.4179,16177.6
+1,CUTLASS,gemm,cutlass_simt_sgemm_128x32_8x5_nt_align1,passed,success,universal,serial,1792,1792,1792,f32:column,f32:row,f32:column,1,0,1,1,simt,f32,128,32,8,5,2,1,1,1,1,1,50,1024,38535168,11515592704,298,0.760873,47.1678,15134.7
+1,CUTLASS,gemm,cutlass_simt_sgemm_32x128_8x5_nt_align1,passed,success,universal,serial,1792,1792,1792,f32:column,f32:row,f32:column,1,0,1,1,simt,f32,32,128,8,5,1,2,1,1,1,1,50,1024,38535168,11515592704,298,0.795351,45.1231,14478.6

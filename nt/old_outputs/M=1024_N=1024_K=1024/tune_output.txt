@@ -1,0 +1,642 @@
+2022-12-12 14:14:09 [INFO] Logging directory: ./old_db/M=1024_N=1024_K=1024_t=2500/logs
+2022-12-12 14:14:10 [INFO] [task_scheduler.cc:157] Initializing Task #0: "main"
+2022-12-12 14:14:10 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 14:14:12 [INFO] [task_scheduler.cc:191] Sending 63 sample(s) to builder
+2022-12-12 14:14:29 [INFO] [task_scheduler.cc:193] Sending 63 sample(s) to runner
+2022-12-12 14:15:12 [DEBUG] XGB iter   0: tr-p-rmse: 0.791160	tr-a-peak@32: 0.701503	tr-rmse: 0.475723	tr-rmse: 0.475723
+2022-12-12 14:15:13 [DEBUG] XGB iter  25: tr-p-rmse: 0.065757	tr-a-peak@32: 1.000000	tr-rmse: 0.509264	tr-rmse: 0.509264
+2022-12-12 14:15:14 [DEBUG] XGB iter  50: tr-p-rmse: 0.065757	tr-a-peak@32: 1.000000	tr-rmse: 0.509264	tr-rmse: 0.509264
+2022-12-12 14:15:14 [DEBUG] XGB stopped. Best iteration: [12] tr-p-rmse:0.06576	tr-a-peak@32:1.00000	tr-rmse:0.50926	tr-rmse:0.50926 
+[14:15:14] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 14:15:14 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 14:15:14 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     15419.0500 |     139.2747 |              139.2747 |     63 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 63
+Total latency (us): 139.275
+
+2022-12-12 14:15:14 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 14:15:16 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 14:15:38 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 14:18:39 [DEBUG] XGB validation: p-rmse: 0.229267	a-peak@32: 0.835944
+2022-12-12 14:18:40 [DEBUG] XGB iter   0: tr-p-rmse: 0.739397	tr-a-peak@32: 0.780455	tr-rmse: 0.436699	tr-rmse: 0.436699
+2022-12-12 14:18:42 [DEBUG] XGB iter  25: tr-p-rmse: 0.059849	tr-a-peak@32: 1.000000	tr-rmse: 0.463548	tr-rmse: 0.463548
+2022-12-12 14:18:42 [DEBUG] XGB iter  50: tr-p-rmse: 0.059849	tr-a-peak@32: 1.000000	tr-rmse: 0.463548	tr-rmse: 0.463548
+2022-12-12 14:18:42 [DEBUG] XGB stopped. Best iteration: [11] tr-p-rmse:0.05985	tr-a-peak@32:1.00000	tr-rmse:0.46355	tr-rmse:0.46355 
+[14:18:43] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 14:18:43 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 14:18:43 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     15419.0500 |     139.2747 |              139.2747 |    127 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 127
+Total latency (us): 139.275
+
+2022-12-12 14:18:43 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 14:18:48 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 14:19:00 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 14:25:48 [DEBUG] XGB validation: p-rmse: 0.218837	a-peak@32: 0.998580
+2022-12-12 14:25:48 [DEBUG] XGB iter   0: tr-p-rmse: 0.587835	tr-a-peak@32: 0.959912	tr-rmse: 0.540586	tr-rmse: 0.540586
+2022-12-12 14:25:53 [DEBUG] XGB iter  25: tr-p-rmse: 0.058931	tr-a-peak@32: 0.999739	tr-rmse: 0.585449	tr-rmse: 0.585449
+2022-12-12 14:25:54 [DEBUG] XGB iter  50: tr-p-rmse: 0.056078	tr-a-peak@32: 0.999739	tr-rmse: 0.585465	tr-rmse: 0.585465
+2022-12-12 14:25:54 [DEBUG] XGB iter  75: tr-p-rmse: 0.056078	tr-a-peak@32: 0.999739	tr-rmse: 0.585465	tr-rmse: 0.585465
+2022-12-12 14:25:54 [DEBUG] XGB stopped. Best iteration: [38] tr-p-rmse:0.05608	tr-a-peak@32:0.99974	tr-rmse:0.58546	tr-rmse:0.58546 
+[14:25:54] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 14:25:54 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 14:25:54 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     15419.0500 |     139.2747 |              139.2747 |    191 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 191
+Total latency (us): 139.275
+
+2022-12-12 14:25:54 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 14:25:58 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 14:26:12 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 14:33:01 [DEBUG] XGB validation: p-rmse: 0.117830	a-peak@32: 0.995594
+2022-12-12 14:33:01 [DEBUG] XGB iter   0: tr-p-rmse: 0.527084	tr-a-peak@32: 0.958754	tr-rmse: 0.586944	tr-rmse: 0.586944
+2022-12-12 14:33:01 [DEBUG] XGB iter  25: tr-p-rmse: 0.065781	tr-a-peak@32: 1.000000	tr-rmse: 0.635909	tr-rmse: 0.635909
+2022-12-12 14:33:01 [DEBUG] XGB iter  50: tr-p-rmse: 0.061601	tr-a-peak@32: 1.000000	tr-rmse: 0.635941	tr-rmse: 0.635941
+2022-12-12 14:33:01 [DEBUG] XGB iter  75: tr-p-rmse: 0.061601	tr-a-peak@32: 1.000000	tr-rmse: 0.635941	tr-rmse: 0.635941
+2022-12-12 14:33:01 [DEBUG] XGB stopped. Best iteration: [45] tr-p-rmse:0.06160	tr-a-peak@32:1.00000	tr-rmse:0.63594	tr-rmse:0.63594 
+[14:33:01] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 14:33:01 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 14:33:01 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     15955.1740 |     134.5948 |              134.5948 |    255 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 255
+Total latency (us): 134.595
+
+2022-12-12 14:33:01 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 14:33:05 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 14:33:11 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 14:37:57 [DEBUG] XGB validation: p-rmse: 0.033463	a-peak@32: 1.000000
+2022-12-12 14:37:58 [DEBUG] XGB iter   0: tr-p-rmse: 0.481196	tr-a-peak@32: 0.966372	tr-rmse: 0.603576	tr-rmse: 0.603576
+2022-12-12 14:38:00 [DEBUG] XGB iter  25: tr-p-rmse: 0.064106	tr-a-peak@32: 0.998956	tr-rmse: 0.654673	tr-rmse: 0.654673
+2022-12-12 14:38:02 [DEBUG] XGB iter  50: tr-p-rmse: 0.056509	tr-a-peak@32: 0.997986	tr-rmse: 0.654647	tr-rmse: 0.654647
+2022-12-12 14:38:02 [DEBUG] XGB iter  75: tr-p-rmse: 0.056509	tr-a-peak@32: 0.997986	tr-rmse: 0.654647	tr-rmse: 0.654647
+2022-12-12 14:38:02 [DEBUG] XGB stopped. Best iteration: [47] tr-p-rmse:0.05651	tr-a-peak@32:0.99799	tr-rmse:0.65465	tr-rmse:0.65465 
+[14:38:02] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 14:38:02 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 14:38:02 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     16283.1934 |     131.8834 |              131.8834 |    319 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 319
+Total latency (us): 131.883
+
+2022-12-12 14:38:02 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 14:38:07 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 14:38:30 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 14:43:22 [DEBUG] XGB validation: p-rmse: 0.050105	a-peak@32: 0.952333
+2022-12-12 14:43:22 [DEBUG] XGB iter   0: tr-p-rmse: 0.449167	tr-a-peak@32: 0.913526	tr-rmse: 0.588471	tr-rmse: 0.588471
+2022-12-12 14:43:22 [DEBUG] XGB iter  25: tr-p-rmse: 0.059350	tr-a-peak@32: 1.000000	tr-rmse: 0.641654	tr-rmse: 0.641654
+2022-12-12 14:43:23 [DEBUG] XGB iter  50: tr-p-rmse: 0.057327	tr-a-peak@32: 1.000000	tr-rmse: 0.641663	tr-rmse: 0.641662
+2022-12-12 14:43:23 [DEBUG] XGB iter  75: tr-p-rmse: 0.057327	tr-a-peak@32: 1.000000	tr-rmse: 0.641662	tr-rmse: 0.641663
+2022-12-12 14:43:23 [DEBUG] XGB stopped. Best iteration: [35] tr-p-rmse:0.05733	tr-a-peak@32:1.00000	tr-rmse:0.64166	tr-rmse:0.64166 
+[14:43:23] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 14:43:23 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 14:43:23 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     17012.0841 |     126.2328 |              126.2328 |    383 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 383
+Total latency (us): 126.233
+
+2022-12-12 14:43:23 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 14:43:28 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 14:43:43 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 14:48:16 [DEBUG] XGB validation: p-rmse: 0.238541	a-peak@32: 0.887538
+[14:48:16] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 14:48:16 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 14:48:16 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     17283.4036 |     124.2512 |              124.2512 |    447 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 447
+Total latency (us): 124.251
+
+2022-12-12 14:48:16 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 14:48:23 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 14:48:39 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 14:53:05 [DEBUG] XGB validation: p-rmse: 0.353260	a-peak@32: 0.943135
+2022-12-12 14:53:05 [DEBUG] XGB iter   0: tr-p-rmse: 0.447279	tr-a-peak@32: 0.942129	tr-rmse: 0.591711	tr-rmse: 0.591711
+2022-12-12 14:53:08 [DEBUG] XGB iter  25: tr-p-rmse: 0.061865	tr-a-peak@32: 0.997089	tr-rmse: 0.643968	tr-rmse: 0.643968
+2022-12-12 14:53:08 [DEBUG] XGB iter  50: tr-p-rmse: 0.058155	tr-a-peak@32: 0.997188	tr-rmse: 0.643956	tr-rmse: 0.643956
+2022-12-12 14:53:09 [DEBUG] XGB iter  75: tr-p-rmse: 0.058155	tr-a-peak@32: 0.997188	tr-rmse: 0.643956	tr-rmse: 0.643956
+2022-12-12 14:53:09 [DEBUG] XGB stopped. Best iteration: [35] tr-p-rmse:0.05815	tr-a-peak@32:0.99719	tr-rmse:0.64396	tr-rmse:0.64396 
+[14:53:09] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 14:53:09 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 14:53:09 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     17283.4036 |     124.2512 |              124.2512 |    511 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 511
+Total latency (us): 124.251
+
+2022-12-12 14:53:09 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 14:53:13 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 14:53:47 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 14:58:08 [DEBUG] XGB validation: p-rmse: 0.171576	a-peak@32: 0.997433
+[14:58:08] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 14:58:08 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 14:58:08 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     17623.9377 |     121.8504 |              121.8504 |    575 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 575
+Total latency (us): 121.85
+
+2022-12-12 14:58:08 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 14:58:16 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 14:58:25 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 15:02:48 [DEBUG] XGB validation: p-rmse: 0.051610	a-peak@32: 0.996076
+2022-12-12 15:02:48 [DEBUG] XGB iter   0: tr-p-rmse: 0.414447	tr-a-peak@32: 0.918915	tr-rmse: 0.596565	tr-rmse: 0.596565
+2022-12-12 15:02:51 [DEBUG] XGB iter  25: tr-p-rmse: 0.055949	tr-a-peak@32: 0.996994	tr-rmse: 0.649891	tr-rmse: 0.649891
+2022-12-12 15:02:51 [DEBUG] XGB iter  50: tr-p-rmse: 0.055023	tr-a-peak@32: 0.996994	tr-rmse: 0.649896	tr-rmse: 0.649896
+2022-12-12 15:02:52 [DEBUG] XGB iter  75: tr-p-rmse: 0.055023	tr-a-peak@32: 0.996994	tr-rmse: 0.649896	tr-rmse: 0.649896
+2022-12-12 15:02:52 [DEBUG] XGB stopped. Best iteration: [34] tr-p-rmse:0.05502	tr-a-peak@32:0.99699	tr-rmse:0.64990	tr-rmse:0.64990 
+[15:02:52] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 15:02:52 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 15:02:52 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     17623.9377 |     121.8504 |              121.8504 |    639 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 639
+Total latency (us): 121.85
+
+2022-12-12 15:02:52 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 15:02:56 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 15:03:02 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 15:07:29 [DEBUG] XGB validation: p-rmse: 0.024147	a-peak@32: 0.993384
+[15:07:29] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 15:07:29 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 15:07:29 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     17884.5868 |     120.0745 |              120.0745 |    703 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 703
+Total latency (us): 120.075
+
+2022-12-12 15:07:29 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 15:07:33 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 15:07:39 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 15:11:16 [DEBUG] XGB validation: p-rmse: 0.057019	a-peak@32: 0.994949
+2022-12-12 15:11:17 [DEBUG] XGB iter   0: tr-p-rmse: 0.392018	tr-a-peak@32: 0.942303	tr-rmse: 0.601553	tr-rmse: 0.601553
+2022-12-12 15:11:19 [DEBUG] XGB iter  25: tr-p-rmse: 0.053120	tr-a-peak@32: 0.994131	tr-rmse: 0.654987	tr-rmse: 0.654987
+2022-12-12 15:11:19 [DEBUG] XGB iter  50: tr-p-rmse: 0.050402	tr-a-peak@32: 0.994553	tr-rmse: 0.654978	tr-rmse: 0.654978
+2022-12-12 15:11:19 [DEBUG] XGB iter  75: tr-p-rmse: 0.050402	tr-a-peak@32: 0.994553	tr-rmse: 0.654978	tr-rmse: 0.654978
+2022-12-12 15:11:19 [DEBUG] XGB stopped. Best iteration: [33] tr-p-rmse:0.05040	tr-a-peak@32:0.99455	tr-rmse:0.65498	tr-rmse:0.65498 
+[15:11:19] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 15:11:19 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 15:11:19 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     17884.5868 |     120.0745 |              120.0745 |    767 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 767
+Total latency (us): 120.075
+
+2022-12-12 15:11:19 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 15:11:24 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 15:11:30 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 15:15:59 [DEBUG] XGB validation: p-rmse: 0.086928	a-peak@32: 0.994079
+[15:15:59] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 15:15:59 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 15:15:59 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     17884.5868 |     120.0745 |              120.0745 |    831 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 831
+Total latency (us): 120.075
+
+2022-12-12 15:15:59 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 15:16:04 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 15:16:10 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 15:20:41 [DEBUG] XGB validation: p-rmse: 0.070116	a-peak@32: 0.992247
+[15:20:41] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 15:20:41 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 15:20:41 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     17884.5868 |     120.0745 |              120.0745 |    895 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 895
+Total latency (us): 120.075
+
+2022-12-12 15:20:41 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 15:20:45 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 15:20:50 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 15:24:44 [DEBUG] XGB validation: p-rmse: 0.059603	a-peak@32: 0.994659
+2022-12-12 15:24:45 [DEBUG] XGB iter   0: tr-p-rmse: 0.426083	tr-a-peak@32: 0.948062	tr-rmse: 0.611940	tr-rmse: 0.611940
+2022-12-12 15:24:48 [DEBUG] XGB iter  25: tr-p-rmse: 0.059041	tr-a-peak@32: 0.993535	tr-rmse: 0.664921	tr-rmse: 0.664921
+2022-12-12 15:24:49 [DEBUG] XGB iter  50: tr-p-rmse: 0.052415	tr-a-peak@32: 0.993538	tr-rmse: 0.664930	tr-rmse: 0.664930
+2022-12-12 15:24:49 [DEBUG] XGB iter  75: tr-p-rmse: 0.052415	tr-a-peak@32: 0.993538	tr-rmse: 0.664930	tr-rmse: 0.664930
+2022-12-12 15:24:49 [DEBUG] XGB stopped. Best iteration: [37] tr-p-rmse:0.05242	tr-a-peak@32:0.99354	tr-rmse:0.66493	tr-rmse:0.66493 
+[15:24:49] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 15:24:49 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 15:24:49 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     17884.5868 |     120.0745 |              120.0745 |    959 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 959
+Total latency (us): 120.075
+
+2022-12-12 15:24:49 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 15:24:54 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 15:25:26 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 15:29:23 [DEBUG] XGB validation: p-rmse: 0.108422	a-peak@32: 0.990225
+[15:29:23] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 15:29:23 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 15:29:23 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     17884.5868 |     120.0745 |              120.0745 |   1023 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 1023
+Total latency (us): 120.075
+
+2022-12-12 15:29:23 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 15:29:30 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 15:29:35 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 15:34:21 [DEBUG] XGB validation: p-rmse: 0.055511	a-peak@32: 0.999321
+[15:34:21] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 15:34:21 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 15:34:21 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     17884.5868 |     120.0745 |              120.0745 |   1087 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 1087
+Total latency (us): 120.075
+
+2022-12-12 15:34:21 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 15:34:28 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 15:34:38 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 15:39:03 [DEBUG] XGB validation: p-rmse: 0.148647	a-peak@32: 0.957913
+2022-12-12 15:39:04 [DEBUG] XGB iter   0: tr-p-rmse: 0.412416	tr-a-peak@32: 0.942422	tr-rmse: 0.600341	tr-rmse: 0.600341
+2022-12-12 15:39:07 [DEBUG] XGB iter  25: tr-p-rmse: 0.052453	tr-a-peak@32: 0.998189	tr-rmse: 0.654202	tr-rmse: 0.654202
+2022-12-12 15:39:07 [DEBUG] XGB iter  50: tr-p-rmse: 0.051661	tr-a-peak@32: 0.998189	tr-rmse: 0.654203	tr-rmse: 0.654203
+2022-12-12 15:39:08 [DEBUG] XGB iter  75: tr-p-rmse: 0.051661	tr-a-peak@32: 0.998189	tr-rmse: 0.654203	tr-rmse: 0.654203
+2022-12-12 15:39:09 [DEBUG] XGB stopped. Best iteration: [29] tr-p-rmse:0.05166	tr-a-peak@32:0.99819	tr-rmse:0.65420	tr-rmse:0.65420 
+[15:39:09] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 15:39:09 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 15:39:09 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     18333.4160 |     117.1349 |              117.1349 |   1151 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 1151
+Total latency (us): 117.135
+
+2022-12-12 15:39:09 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 15:39:14 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 15:39:31 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 15:43:54 [DEBUG] XGB validation: p-rmse: 0.042071	a-peak@32: 0.992763
+[15:43:54] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 15:43:54 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 15:43:54 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     18333.4160 |     117.1349 |              117.1349 |   1215 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 1215
+Total latency (us): 117.135
+
+2022-12-12 15:43:54 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 15:44:02 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 15:44:08 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 15:48:39 [DEBUG] XGB validation: p-rmse: 0.044830	a-peak@32: 0.992463
+[15:48:39] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 15:48:39 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 15:48:39 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     18333.4160 |     117.1349 |              117.1349 |   1279 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 1279
+Total latency (us): 117.135
+
+2022-12-12 15:48:39 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 15:48:46 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 15:48:53 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 15:53:32 [DEBUG] XGB validation: p-rmse: 0.046412	a-peak@32: 0.996095
+[15:53:32] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 15:53:32 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 15:53:32 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     18397.2646 |     116.7284 |              116.7284 |   1343 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 1343
+Total latency (us): 116.728
+
+2022-12-12 15:53:32 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 15:53:40 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 15:53:47 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 15:58:14 [DEBUG] XGB validation: p-rmse: 0.038398	a-peak@32: 0.992369
+2022-12-12 15:58:14 [DEBUG] XGB iter   0: tr-p-rmse: 0.338782	tr-a-peak@32: 0.949275	tr-rmse: 0.607704	tr-rmse: 0.607704
+2022-12-12 15:58:16 [DEBUG] XGB iter  25: tr-p-rmse: 0.047476	tr-a-peak@32: 0.997559	tr-rmse: 0.661785	tr-rmse: 0.661785
+2022-12-12 15:58:16 [DEBUG] XGB iter  50: tr-p-rmse: 0.046019	tr-a-peak@32: 0.998132	tr-rmse: 0.661795	tr-rmse: 0.661795
+2022-12-12 15:58:16 [DEBUG] XGB iter  75: tr-p-rmse: 0.046019	tr-a-peak@32: 0.998132	tr-rmse: 0.661796	tr-rmse: 0.661795
+2022-12-12 15:58:16 [DEBUG] XGB stopped. Best iteration: [31] tr-p-rmse:0.04602	tr-a-peak@32:0.99813	tr-rmse:0.66180	tr-rmse:0.66180 
+[15:58:16] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 15:58:16 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 15:58:16 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     18397.2646 |     116.7284 |              116.7284 |   1407 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 1407
+Total latency (us): 116.728
+
+2022-12-12 15:58:16 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 15:58:21 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 15:58:32 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 16:03:11 [DEBUG] XGB validation: p-rmse: 0.203684	a-peak@32: 0.993693
+[16:03:11] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 16:03:11 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 16:03:11 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     18397.2646 |     116.7284 |              116.7284 |   1471 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 1471
+Total latency (us): 116.728
+
+2022-12-12 16:03:11 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 16:03:18 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 16:03:25 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 16:07:31 [DEBUG] XGB validation: p-rmse: 0.141908	a-peak@32: 0.992046
+[16:07:31] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 16:07:31 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 16:07:31 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     18397.2646 |     116.7284 |              116.7284 |   1535 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 1535
+Total latency (us): 116.728
+
+2022-12-12 16:07:31 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 16:07:38 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 16:07:54 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 16:11:38 [DEBUG] XGB validation: p-rmse: 0.048024	a-peak@32: 0.990591
+[16:11:38] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 16:11:38 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 16:11:38 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     18413.3146 |     116.6267 |              116.6267 |   1599 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 1599
+Total latency (us): 116.627
+
+2022-12-12 16:11:38 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 16:11:42 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 16:11:48 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 16:16:36 [DEBUG] XGB validation: p-rmse: 0.025038	a-peak@32: 0.996068
+[16:16:36] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 16:16:36 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 16:16:36 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     18413.3146 |     116.6267 |              116.6267 |   1663 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 1663
+Total latency (us): 116.627
+
+2022-12-12 16:16:36 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 16:16:41 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 16:16:46 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 16:20:38 [DEBUG] XGB validation: p-rmse: 0.176965	a-peak@32: 0.984838
+2022-12-12 16:20:38 [DEBUG] XGB iter   0: tr-p-rmse: 0.381186	tr-a-peak@32: 0.945740	tr-rmse: 0.618127	tr-rmse: 0.618127
+2022-12-12 16:20:38 [DEBUG] XGB iter  25: tr-p-rmse: 0.047760	tr-a-peak@32: 0.997896	tr-rmse: 0.671280	tr-rmse: 0.671280
+2022-12-12 16:20:39 [DEBUG] XGB iter  50: tr-p-rmse: 0.043040	tr-a-peak@32: 0.997848	tr-rmse: 0.671266	tr-rmse: 0.671266
+2022-12-12 16:20:39 [DEBUG] XGB iter  75: tr-p-rmse: 0.043040	tr-a-peak@32: 0.997848	tr-rmse: 0.671266	tr-rmse: 0.671266
+2022-12-12 16:20:39 [DEBUG] XGB stopped. Best iteration: [39] tr-p-rmse:0.04304	tr-a-peak@32:0.99785	tr-rmse:0.67127	tr-rmse:0.67127 
+[16:20:39] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 16:20:39 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 16:20:39 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     18413.3146 |     116.6267 |              116.6267 |   1727 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 1727
+Total latency (us): 116.627
+
+2022-12-12 16:20:39 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 16:20:44 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 16:20:50 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 16:25:21 [DEBUG] XGB validation: p-rmse: 0.042461	a-peak@32: 0.997278
+[16:25:21] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 16:25:21 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 16:25:21 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     18413.3146 |     116.6267 |              116.6267 |   1791 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 1791
+Total latency (us): 116.627
+
+2022-12-12 16:25:21 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 16:25:26 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 16:25:32 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 16:28:57 [DEBUG] XGB validation: p-rmse: 0.184483	a-peak@32: 0.991613
+[16:28:57] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 16:28:57 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 16:28:57 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     18413.3146 |     116.6267 |              116.6267 |   1855 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 1855
+Total latency (us): 116.627
+
+2022-12-12 16:28:57 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 16:29:02 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 16:29:08 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 16:30:04 [DEBUG] XGB validation: p-rmse: 0.173242	a-peak@32: 0.990510
+[16:30:04] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 16:30:04 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 16:30:04 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     18413.3146 |     116.6267 |              116.6267 |   1919 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 1919
+Total latency (us): 116.627
+
+2022-12-12 16:30:04 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 16:30:09 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 16:30:14 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 16:30:56 [DEBUG] XGB validation: p-rmse: 0.039128	a-peak@32: 1.000000
+[16:30:56] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 16:30:56 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 16:30:56 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     18413.3146 |     116.6267 |              116.6267 |   1983 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 1983
+Total latency (us): 116.627
+
+2022-12-12 16:30:56 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 16:31:00 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 16:31:10 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 16:32:02 [DEBUG] XGB validation: p-rmse: 0.038261	a-peak@32: 1.000000
+[16:32:02] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 16:32:02 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 16:32:02 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     18413.3146 |     116.6267 |              116.6267 |   2047 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 2047
+Total latency (us): 116.627
+
+2022-12-12 16:32:02 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 16:32:07 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 16:32:12 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 16:33:07 [DEBUG] XGB validation: p-rmse: 0.223852	a-peak@32: 0.972316
+2022-12-12 16:33:08 [DEBUG] XGB iter   0: tr-p-rmse: 0.322946	tr-a-peak@32: 0.934503	tr-rmse: 0.622896	tr-rmse: 0.622896
+2022-12-12 16:33:09 [DEBUG] XGB iter  25: tr-p-rmse: 0.054677	tr-a-peak@32: 0.994918	tr-rmse: 0.676279	tr-rmse: 0.676279
+2022-12-12 16:33:10 [DEBUG] XGB iter  50: tr-p-rmse: 0.048774	tr-a-peak@32: 0.994561	tr-rmse: 0.676262	tr-rmse: 0.676262
+2022-12-12 16:33:10 [DEBUG] XGB iter  75: tr-p-rmse: 0.048774	tr-a-peak@32: 0.994561	tr-rmse: 0.676262	tr-rmse: 0.676262
+2022-12-12 16:33:10 [DEBUG] XGB stopped. Best iteration: [37] tr-p-rmse:0.04877	tr-a-peak@32:0.99456	tr-rmse:0.67626	tr-rmse:0.67626 
+[16:33:10] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 16:33:10 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 16:33:10 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     18413.3146 |     116.6267 |              116.6267 |   2111 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 2111
+Total latency (us): 116.627
+
+2022-12-12 16:33:10 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 16:33:14 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 16:33:19 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 16:34:18 [DEBUG] XGB validation: p-rmse: 0.115309	a-peak@32: 0.999825
+[16:34:18] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 16:34:18 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 16:34:18 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     18413.3146 |     116.6267 |              116.6267 |   2175 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 2175
+Total latency (us): 116.627
+
+2022-12-12 16:34:18 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 16:34:24 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 16:34:29 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 16:35:32 [DEBUG] XGB validation: p-rmse: 0.076924	a-peak@32: 0.995495
+[16:35:32] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 16:35:32 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 16:35:32 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     18413.3146 |     116.6267 |              116.6267 |   2239 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 2239
+Total latency (us): 116.627
+
+2022-12-12 16:35:32 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 16:35:37 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 16:35:41 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 16:36:04 [DEBUG] XGB validation: p-rmse: 0.066859	a-peak@32: 1.000000
+[16:36:04] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 16:36:04 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 16:36:04 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     18413.3146 |     116.6267 |              116.6267 |   2303 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 2303
+Total latency (us): 116.627
+
+2022-12-12 16:36:04 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 16:36:08 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 16:36:14 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 16:37:08 [DEBUG] XGB validation: p-rmse: 0.133068	a-peak@32: 0.998434
+[16:37:08] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 16:37:08 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 16:37:08 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     18413.3146 |     116.6267 |              116.6267 |   2367 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 2367
+Total latency (us): 116.627
+
+2022-12-12 16:37:08 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 16:37:13 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 16:37:18 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 16:38:15 [DEBUG] XGB validation: p-rmse: 0.043873	a-peak@32: 0.993498
+[16:38:15] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 16:38:15 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 16:38:15 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     18413.3146 |     116.6267 |              116.6267 |   2431 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 2431
+Total latency (us): 116.627
+
+2022-12-12 16:38:15 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 16:38:20 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-12 16:38:28 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-12 16:39:26 [DEBUG] XGB validation: p-rmse: 0.171933	a-peak@32: 1.000000
+[16:39:26] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 16:39:26 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 16:39:26 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     18413.3146 |     116.6267 |              116.6267 |   2495 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 2495
+Total latency (us): 116.627
+
+2022-12-12 16:39:26 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-12 16:39:33 [INFO] [task_scheduler.cc:191] Sending 5 sample(s) to builder
+2022-12-12 16:39:34 [INFO] [task_scheduler.cc:193] Sending 5 sample(s) to runner
+2022-12-12 16:39:52 [DEBUG] XGB validation: p-rmse: 0.061967	a-peak@32: 0.995646
+[16:39:52] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-12 16:39:52 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-12 16:39:52 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     18413.3146 |     116.6267 |              116.6267 |   2500 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 2500
+Total latency (us): 116.627
+
+[16:39:52] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:257: c[3J[2J[0m[H
+2022-12-12 16:39:52 [INFO] [task_scheduler.cc:258] Task #0 has finished. Remaining task(s): 0
+2022-12-12 16:39:52 [INFO] [task_scheduler.cc:318] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2147483648 |      1 |     18413.3146 |     116.6267 |              116.6267 |   2500 |    Y 
+---------------------------------------------------------------------------------------------------------
+Total trials: 2500
+Total latency (us): 116.627
+
+/usr/local/lib/python3.8/dist-packages/xgboost/compat.py:31: FutureWarning: pandas.Int64Index is deprecated and will be removed from pandas in a future version. Use pandas.Index with the appropriate dtype instead.
+  from pandas import MultiIndex, Int64Index
+GFLOPS: 18339.76

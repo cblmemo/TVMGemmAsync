@@ -1,0 +1,50 @@
+2022-12-20 10:11:36 [INFO] Logging directory: ./db/M=2048_N=2048_K=2048_t=100/logs
+2022-12-20 10:11:37 [INFO] [task_scheduler.cc:157] Initializing Task #0: "main"
+2022-12-20 10:11:37 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-20 10:11:38 [INFO] [task_scheduler.cc:191] Sending 64 sample(s) to builder
+2022-12-20 10:12:09 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to runner
+2022-12-20 10:13:35 [DEBUG] XGB iter   0: tr-p-rmse: 0.172308	tr-a-peak@32: 0.418910	tr-rmse: 0.567268	tr-rmse: 0.567268
+2022-12-20 10:13:35 [DEBUG] XGB iter  25: tr-p-rmse: 0.078110	tr-a-peak@32: 1.000000	tr-rmse: 0.481840	tr-rmse: 0.481840
+2022-12-20 10:13:35 [DEBUG] XGB iter  50: tr-p-rmse: 0.078110	tr-a-peak@32: 1.000000	tr-rmse: 0.481840	tr-rmse: 0.481840
+2022-12-20 10:13:35 [DEBUG] XGB stopped. Best iteration: [6] tr-p-rmse:0.07802	tr-a-peak@32:1.00000	tr-rmse:0.48186	tr-rmse:0.48186 
+[10:13:35] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-20 10:13:35 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-20 10:13:35 [INFO] [task_scheduler.cc:318] 
+ ID | Name |        FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+----------------------------------------------------------------------------------------------------------
+  0 | main | 17179869184 |      1 |     17335.6375 |     991.0146 |              991.0146 |     64 |      
+----------------------------------------------------------------------------------------------------------
+Total trials: 64
+Total latency (us): 991.015
+
+2022-12-20 10:13:35 [INFO] [task_scheduler.cc:178] TaskScheduler picks Task #0: "main"
+2022-12-20 10:13:36 [INFO] [task_scheduler.cc:191] Sending 36 sample(s) to builder
+2022-12-20 10:13:46 [INFO] [task_scheduler.cc:193] Sending 36 sample(s) to runner
+2022-12-20 10:14:07 [DEBUG] XGB validation: p-rmse: 0.283574	a-peak@32: 0.919255
+2022-12-20 10:14:07 [DEBUG] XGB iter   0: tr-p-rmse: 0.192795	tr-a-peak@32: 0.407146	tr-rmse: 0.606149	tr-rmse: 0.606148
+2022-12-20 10:14:07 [DEBUG] XGB iter  25: tr-p-rmse: 0.093395	tr-a-peak@32: 1.000000	tr-rmse: 0.517103	tr-rmse: 0.517103
+2022-12-20 10:14:07 [DEBUG] XGB iter  50: tr-p-rmse: 0.093395	tr-a-peak@32: 1.000000	tr-rmse: 0.517103	tr-rmse: 0.517103
+2022-12-20 10:14:07 [DEBUG] XGB stopped. Best iteration: [5] tr-p-rmse:0.09331	tr-a-peak@32:1.00000	tr-rmse:0.51713	tr-rmse:0.51713 
+[10:14:07] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:234: c[3J[2J[0m[H
+2022-12-20 10:14:07 [INFO] [task_scheduler.cc:235] [Updated] Task #0: "main"
+2022-12-20 10:14:07 [INFO] [task_scheduler.cc:318] 
+ ID | Name |        FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+----------------------------------------------------------------------------------------------------------
+  0 | main | 17179869184 |      1 |     17335.6375 |     991.0146 |              991.0146 |    100 |      
+----------------------------------------------------------------------------------------------------------
+Total trials: 100
+Total latency (us): 991.015
+
+[10:14:07] /home/txia/mainline_tvm/src/meta_schedule/task_scheduler/task_scheduler.cc:257: c[3J[2J[0m[H
+2022-12-20 10:14:07 [INFO] [task_scheduler.cc:258] Task #0 has finished. Remaining task(s): 0
+2022-12-20 10:14:07 [INFO] [task_scheduler.cc:318] 
+ ID | Name |        FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+----------------------------------------------------------------------------------------------------------
+  0 | main | 17179869184 |      1 |     17335.6375 |     991.0146 |              991.0146 |    100 |    Y 
+----------------------------------------------------------------------------------------------------------
+Total trials: 100
+Total latency (us): 991.015
+
+/usr/local/lib/python3.8/dist-packages/xgboost/compat.py:31: FutureWarning: pandas.Int64Index is deprecated and will be removed from pandas in a future version. Use pandas.Index with the appropriate dtype instead.
+  from pandas import MultiIndex, Int64Index
+GFLOPS: 17218.98
