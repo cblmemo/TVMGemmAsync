@@ -1,6 +1,14 @@
 # TVMGemmAsync
 
-Evaluated under [apache tvm](https://github.com/apache/tvm).
+Template-based async TVM benchmark. The result is available [here](https://docs.google.com/spreadsheets/d/1thf1jsbX87WokRfESXO14fx40H3vYHDk6EWkb_wnv5Y).
+
+## Specs
+
+CUDA version: 11.7 / 12.0
+
+Graphic Card: Geforce RTX 3080
+
+TVM version: [apache tvm](https://github.com/apache/tvm), commit `afbfb7aa7e43732cb716f8e443df696110be6afc`
 
 ## File Structure
 
