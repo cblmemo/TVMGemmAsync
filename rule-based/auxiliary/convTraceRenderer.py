@@ -9,65 +9,12 @@ from tvm import te, topi, tir
 from tvm import meta_schedule as ms
 from tvm.target import Target
 
-
-def conv2d_nhwc(  # pylint: disable=invalid-name,missing-docstring
-        N: int,
-        H: int,
-        W: int,
-        CI: int,
-        CO: int,
-        kernel_size: int,
-        stride: int = 1,
-        padding: int = 0,
-        dilation: int = 1,
-        groups: int = 1,
-        in_dtype: str = "float32",
-        out_dtype: str = "float32",
-):
-    inputs = te.placeholder((N, H, W, CI), name="inputs", dtype=in_dtype)
-    weight = te.placeholder((kernel_size, kernel_size, CI // groups, CO), name="weight", dtype=in_dtype)
-    batch_size, in_h, in_w, _ = inputs.shape
-    k_h, k_w, channel_per_group, out_channel = weight.shape
-    out_channel_per_group = out_channel // groups
-
-    out_h = (in_h + 2 * padding - dilation * (k_h - 1) - 1) // stride + 1
-    out_w = (in_w + 2 * padding - dilation * (k_w - 1) - 1) // stride + 1
-    rh = te.reduce_axis((0, k_h), name="rh")
-    rw = te.reduce_axis((0, k_w), name="rw")
-    rc = te.reduce_axis((0, channel_per_group), name="rc")
-
-    padded = topi.nn.pad(inputs, [0, padding, padding, 0])
-    output = te.compute(
-        (batch_size, out_h, out_w, out_channel),
-        lambda n, h, w, co: te.sum(
-            (padded[n, h * stride + rh * dilation, w * stride + rw * dilation, co // out_channel_per_group * channel_per_group + rc, ].astype(out_dtype) * weight[rh, rw, rc, co].astype(out_dtype)),
-            axis=[rh, rw, rc],
-        ),
-        name="conv2d_nhwc",
-    )
-    return (inputs, weight, output)
+from conv_utils import create_conv_workload, eval_conv_sch
 
 
 def create_conv_module():
-    conv_workload = conv2d_nhwc(1, 56, 56, 64, 64, 3, 1, 1)
+    conv_workload = create_conv_workload()
     return tvm.IRModule({"main": te.create_prim_func(conv_workload).with_attr({"global_symbol": "main"})})
-
-
-def eval_sch(sch: tir.Schedule):
-    mod = sch.mod
-    rt_mod = tvm.build(mod, target="cuda")
-    dev = tvm.cuda(0)
-    input_np = np.random.uniform(size=(1, 56, 56, 64)).astype("float32")
-    weight_np = np.random.uniform(size=(3, 3, 64, 64)).astype("float32")
-    input_nd = tvm.nd.array(input_np, dev)
-    weight_nd = tvm.nd.array(weight_np, dev)
-    output_nd = tvm.nd.array(np.zeros((1, 56, 56, 64), dtype="float32"), dev)
-    gemm_m, gemm_n, gemm_k = 1 * 56 * 56, 64, 3 * 3 * 64
-    num_flop = 2 * (gemm_m * gemm_n * gemm_k + gemm_m * gemm_n)
-    evaluator = rt_mod.time_evaluator("main", dev, number=10)
-    print("Conv2d speed: %f GFLOPS" % (num_flop / evaluator(input_nd, weight_nd, output_nd).mean / 1e9))
-    # rt_mod(input_nd, weight_nd, output_nd)
-    # tvm.testing.assert_allclose(C_nd.numpy(), np.dot(A_np.T, B_np), rtol=1e-5)
 
 
 def apply_trace_cnt(cnt: int):
@@ -445,7 +392,7 @@ try:
         ms.postproc.RewriteCooperativeFetch().apply(sch)
         print(f'[{cnt}]: ' + msg)
         try:
-            eval_sch(sch)
+            eval_conv_sch(sch)
         except:
             print('eval not available now')
         with open('bin/script.py', 'w') as f:

@@ -7,52 +7,6 @@
 #include <unistd.h>
 #include <vector>
 
-// using CutlassBestPerf = cutlass::gemm::device::Gemm<
-//     float, cutlass::layout::ColumnMajor,
-//     float, cutlass::layout::RowMajor,
-//     float, cutlass::layout::RowMajor,
-//     float,
-//     cutlass::arch::OpClassSimt,
-//     cutlass::arch::Sm80,
-//     cutlass::gemm::GemmShape<64, 128, 8>,
-//     cutlass::gemm::GemmShape<32, 64, 8>,
-//     cutlass::gemm::GemmShape<1, 1, 1>,
-//     cutlass::epilogue::thread::LinearCombination<
-//         float,
-//         1,
-//         float,
-//         float
-//     >,
-//     cutlass::gemm::threadblock::GemmIdentityThreadblockSwizzle<8>,
-//     5,
-//     1,
-//     1,
-//     true,
-//     cutlass::arch::OpMultiplyAdd
-//     >;
-
-// void run_bestPerf(float *IT, float *WT, float *OT) {
-// #ifdef NT_LAYOUT
-//     int lda = M;
-//     int ldb = N;
-//     int ldc = N;
-// #elif defined(NN_LAYOUT)
-//     int lda = M;
-//     int ldb = N;
-//     int ldc = M;
-// #endif
-//     CutlassBestPerf gemm_operator;
-//     CutlassBestPerf::Arguments args(
-//         {M, N, K},
-//         {A, lda},
-//         {B, ldb},
-//         {C, ldc},
-//         {C, ldc},
-//         {1, 0}
-//     );
-//     gemm_operator(args);
-// }
-
 /// Conv operation element types for the Gemm equivalent (ImplicitGemm)
 using ElementA           = float;
 using ElementB           = float;
@@ -204,7 +158,8 @@ float multiTest(void (*calc)(float *, float *, float *), int round = 100) {
 int main() {
     preprocess();
     float cutlass = multiTest(run_cutlass, 100);
-    float tune = multiTest(run_tune, 100);
-    printf("tune: %f, cutlass: %f\n", tune, cutlass);
+    printf("cutlass: %f\n", cutlass);
+    // float tune = multiTest(run_tune, 100);
+    // printf("tune: %f\n", tune)
     return 0;
 }
