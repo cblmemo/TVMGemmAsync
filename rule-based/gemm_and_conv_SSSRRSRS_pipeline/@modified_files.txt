@@ -1,0 +1,19 @@
+Changed Files:
+----------------------------------------------------------------------------
+[Added]    src/meta_schedule/schedule_rule/multi_level_tiling_pipelined.cc
+           Main implementation for MultiLevelTilingPipelined
+----------------------------------------------------------------------------
+[Modified] include/tvm/meta_schedule/schedule_rule.h
+           Add ctor for MultiLevelTilingPipelined in CPP
+----------------------------------------------------------------------------
+[Modified] src/meta_schedule/schedule_rule/schedule_rule.cc
+           Add MultiLevelTilingPipelined to default CUDA rules
+----------------------------------------------------------------------------
+[Modified] python/tvm/meta_schedule/schedule_rule/__init__.py
+           Import MultiLevelTilingPipelined
+----------------------------------------------------------------------------
+[Modified] python/tvm/meta_schedule/schedule_rule/multi_level_tiling.py
+           Add ctor for MultiLevelTilingPipelined in Python
+----------------------------------------------------------------------------
+[Modified] python/tvm/tir/tensor_intrin/cuda.py
+           Add float32 TensorIntrin for Pipelined Rule pattern detection
