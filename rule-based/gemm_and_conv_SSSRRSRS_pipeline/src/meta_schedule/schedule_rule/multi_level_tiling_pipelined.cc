@@ -157,16 +157,11 @@ Array<Schedule> MultiLevelTilingPipelinedNode::Apply(const Schedule& sch,
     );
     if (mapping_info.defined()) mapping_infos.insert(mapping_info.value());
   }
-  std::cout<<(*mapping_infos.begin())->mappings<<std::endl;
-  std::cout<<(*mapping_infos.begin())->lhs_buffer_map<<std::endl;
-  std::cout<<(*mapping_infos.begin())->rhs_buffer_indices<<std::endl;
-  std::cout<<(*mapping_infos.begin())->lhs_iters<<std::endl;
-  std::cout<<(*mapping_infos.begin())->rhs_iters<<std::endl;
 
   Array<Schedule> results;
   // add an unannotated schedule for MultiLevelTiling to process
   // make sure pipelined traces could coexist with original MultiLevelTiling trace
-  // results.push_back(sch->Copy());
+  results.push_back(sch->Copy());
 
   std::vector<State> initial_states;
   for (const tir::AutoTensorizeMappingInfo &mapping_info : mapping_infos) {
