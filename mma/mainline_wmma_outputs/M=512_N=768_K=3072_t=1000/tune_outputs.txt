@@ -1,0 +1,260 @@
+2023-04-13 11:49:23 [INFO] Logging directory: ./tensorcore_db/M=512_N=768_K=3072_t=1000/logs
+2023-04-13 11:49:26 [INFO] [task_scheduler.cc:159] Initializing Task #0: "main"
+2023-04-13 11:49:26 [INFO] [task_scheduler.cc:180] TaskScheduler picks Task #0: "main"
+2023-04-13 11:49:44 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to builder
+2023-04-13 11:49:47 [INFO] [task_scheduler.cc:195] Sending 64 sample(s) to runner
+2023-04-13 11:50:17 [DEBUG] XGB iter   0: tr-p-rmse: 0.605378	tr-a-peak@32: 0.866564	tr-rmse: 0.313666	tr-rmse: 0.313666
+2023-04-13 11:50:17 [DEBUG] XGB iter  25: tr-p-rmse: 0.048987	tr-a-peak@32: 1.000000	tr-rmse: 0.367776	tr-rmse: 0.367776
+2023-04-13 11:50:17 [DEBUG] XGB iter  50: tr-p-rmse: 0.048987	tr-a-peak@32: 1.000000	tr-rmse: 0.367776	tr-rmse: 0.367776
+2023-04-13 11:50:18 [DEBUG] XGB stopped. Best iteration: [21] tr-p-rmse:0.04899	tr-a-peak@32:1.00000	tr-rmse:0.36778	tr-rmse:0.36778 
+2023-04-13 11:50:18 [INFO] [task_scheduler.cc:237] [Updated] Task #0: "main"
+2023-04-13 11:50:18 [INFO] [task_scheduler.cc:320] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2415919104 |      1 |     42281.3748 |      57.1391 |               57.1391 |     64 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 64
+Total latency (us): 57.1391
+
+2023-04-13 11:50:18 [INFO] [task_scheduler.cc:180] TaskScheduler picks Task #0: "main"
+2023-04-13 11:50:35 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to builder
+2023-04-13 11:50:40 [INFO] [task_scheduler.cc:195] Sending 64 sample(s) to runner
+2023-04-13 11:51:08 [DEBUG] XGB validation: p-rmse: 0.177083	a-peak@32: 1.000000
+2023-04-13 11:51:08 [DEBUG] XGB iter   0: tr-p-rmse: 0.556457	tr-a-peak@32: 1.000000	tr-rmse: 0.301062	tr-rmse: 0.301062
+2023-04-13 11:51:08 [DEBUG] XGB iter  25: tr-p-rmse: 0.040505	tr-a-peak@32: 0.999862	tr-rmse: 0.380752	tr-rmse: 0.380752
+2023-04-13 11:51:08 [DEBUG] XGB iter  50: tr-p-rmse: 0.040505	tr-a-peak@32: 0.999862	tr-rmse: 0.380752	tr-rmse: 0.380752
+2023-04-13 11:51:08 [DEBUG] XGB stopped. Best iteration: [20] tr-p-rmse:0.04050	tr-a-peak@32:0.99986	tr-rmse:0.38075	tr-rmse:0.38075 
+2023-04-13 11:51:08 [INFO] [task_scheduler.cc:237] [Updated] Task #0: "main"
+2023-04-13 11:51:08 [INFO] [task_scheduler.cc:320] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2415919104 |      1 |     42281.3748 |      57.1391 |               57.1391 |    128 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 128
+Total latency (us): 57.1391
+
+2023-04-13 11:51:08 [INFO] [task_scheduler.cc:180] TaskScheduler picks Task #0: "main"
+2023-04-13 11:51:28 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to builder
+2023-04-13 11:51:32 [INFO] [task_scheduler.cc:195] Sending 64 sample(s) to runner
+2023-04-13 11:52:02 [DEBUG] XGB validation: p-rmse: 0.125352	a-peak@32: 0.986935
+2023-04-13 11:52:02 [DEBUG] XGB iter   0: tr-p-rmse: 0.508172	tr-a-peak@32: 0.971927	tr-rmse: 0.413730	tr-rmse: 0.413730
+2023-04-13 11:52:02 [DEBUG] XGB iter  25: tr-p-rmse: 0.032854	tr-a-peak@32: 0.999561	tr-rmse: 0.489569	tr-rmse: 0.489569
+2023-04-13 11:52:02 [DEBUG] XGB iter  50: tr-p-rmse: 0.032854	tr-a-peak@32: 0.999561	tr-rmse: 0.489569	tr-rmse: 0.489569
+2023-04-13 11:52:02 [DEBUG] XGB stopped. Best iteration: [21] tr-p-rmse:0.03285	tr-a-peak@32:0.99956	tr-rmse:0.48957	tr-rmse:0.48957 
+2023-04-13 11:52:02 [INFO] [task_scheduler.cc:237] [Updated] Task #0: "main"
+2023-04-13 11:52:02 [INFO] [task_scheduler.cc:320] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2415919104 |      1 |     45630.9439 |      52.9448 |               52.9448 |    192 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 192
+Total latency (us): 52.9448
+
+2023-04-13 11:52:02 [INFO] [task_scheduler.cc:180] TaskScheduler picks Task #0: "main"
+2023-04-13 11:52:23 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to builder
+2023-04-13 11:52:26 [INFO] [task_scheduler.cc:195] Sending 64 sample(s) to runner
+2023-04-13 11:52:55 [DEBUG] XGB validation: p-rmse: 0.032566	a-peak@32: 1.000000
+2023-04-13 11:52:55 [DEBUG] XGB iter   0: tr-p-rmse: 0.458027	tr-a-peak@32: 0.985904	tr-rmse: 0.465356	tr-rmse: 0.465356
+2023-04-13 11:52:55 [DEBUG] XGB iter  25: tr-p-rmse: 0.029842	tr-a-peak@32: 1.000000	tr-rmse: 0.540340	tr-rmse: 0.540340
+2023-04-13 11:52:55 [DEBUG] XGB iter  50: tr-p-rmse: 0.029842	tr-a-peak@32: 1.000000	tr-rmse: 0.540340	tr-rmse: 0.540340
+2023-04-13 11:52:55 [DEBUG] XGB iter  75: tr-p-rmse: 0.029842	tr-a-peak@32: 1.000000	tr-rmse: 0.540340	tr-rmse: 0.540340
+2023-04-13 11:52:55 [DEBUG] XGB stopped. Best iteration: [25] tr-p-rmse:0.02984	tr-a-peak@32:1.00000	tr-rmse:0.54034	tr-rmse:0.54034 
+2023-04-13 11:52:55 [INFO] [task_scheduler.cc:237] [Updated] Task #0: "main"
+2023-04-13 11:52:55 [INFO] [task_scheduler.cc:320] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2415919104 |      1 |     45819.2819 |      52.7271 |               52.7271 |    256 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 256
+Total latency (us): 52.7271
+
+2023-04-13 11:52:55 [INFO] [task_scheduler.cc:180] TaskScheduler picks Task #0: "main"
+2023-04-13 11:53:16 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to builder
+2023-04-13 11:53:19 [INFO] [task_scheduler.cc:195] Sending 64 sample(s) to runner
+2023-04-13 11:53:48 [DEBUG] XGB validation: p-rmse: 0.081238	a-peak@32: 0.985389
+2023-04-13 11:53:48 [DEBUG] XGB iter   0: tr-p-rmse: 0.426579	tr-a-peak@32: 0.978234	tr-rmse: 0.483220	tr-rmse: 0.483220
+2023-04-13 11:53:48 [DEBUG] XGB iter  25: tr-p-rmse: 0.028427	tr-a-peak@32: 0.999973	tr-rmse: 0.559229	tr-rmse: 0.559229
+2023-04-13 11:53:48 [DEBUG] XGB iter  50: tr-p-rmse: 0.028427	tr-a-peak@32: 0.999973	tr-rmse: 0.559229	tr-rmse: 0.559229
+2023-04-13 11:53:48 [DEBUG] XGB stopped. Best iteration: [21] tr-p-rmse:0.02843	tr-a-peak@32:0.99997	tr-rmse:0.55923	tr-rmse:0.55923 
+2023-04-13 11:53:48 [INFO] [task_scheduler.cc:237] [Updated] Task #0: "main"
+2023-04-13 11:53:48 [INFO] [task_scheduler.cc:320] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2415919104 |      1 |     46543.3077 |      51.9069 |               51.9069 |    320 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 320
+Total latency (us): 51.9069
+
+2023-04-13 11:53:48 [INFO] [task_scheduler.cc:180] TaskScheduler picks Task #0: "main"
+2023-04-13 11:54:09 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to builder
+2023-04-13 11:54:13 [INFO] [task_scheduler.cc:195] Sending 64 sample(s) to runner
+2023-04-13 11:54:42 [DEBUG] XGB validation: p-rmse: 0.103380	a-peak@32: 0.987657
+2023-04-13 11:54:42 [DEBUG] XGB iter   0: tr-p-rmse: 0.405786	tr-a-peak@32: 0.963629	tr-rmse: 0.497678	tr-rmse: 0.497678
+2023-04-13 11:54:43 [DEBUG] XGB iter  25: tr-p-rmse: 0.033045	tr-a-peak@32: 0.999999	tr-rmse: 0.573218	tr-rmse: 0.573218
+2023-04-13 11:54:43 [DEBUG] XGB iter  50: tr-p-rmse: 0.033045	tr-a-peak@32: 0.999999	tr-rmse: 0.573218	tr-rmse: 0.573218
+2023-04-13 11:54:43 [DEBUG] XGB stopped. Best iteration: [22] tr-p-rmse:0.03304	tr-a-peak@32:1.00000	tr-rmse:0.57322	tr-rmse:0.57322 
+2023-04-13 11:54:43 [INFO] [task_scheduler.cc:237] [Updated] Task #0: "main"
+2023-04-13 11:54:43 [INFO] [task_scheduler.cc:320] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2415919104 |      1 |     46543.3077 |      51.9069 |               51.9069 |    384 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 384
+Total latency (us): 51.9069
+
+2023-04-13 11:54:43 [INFO] [task_scheduler.cc:180] TaskScheduler picks Task #0: "main"
+2023-04-13 11:55:03 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to builder
+2023-04-13 11:55:07 [INFO] [task_scheduler.cc:195] Sending 64 sample(s) to runner
+2023-04-13 11:55:36 [DEBUG] XGB validation: p-rmse: 0.045368	a-peak@32: 0.992111
+2023-04-13 11:55:36 [INFO] [task_scheduler.cc:237] [Updated] Task #0: "main"
+2023-04-13 11:55:36 [INFO] [task_scheduler.cc:320] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2415919104 |      1 |     46543.3077 |      51.9069 |               51.9069 |    448 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 448
+Total latency (us): 51.9069
+
+2023-04-13 11:55:36 [INFO] [task_scheduler.cc:180] TaskScheduler picks Task #0: "main"
+2023-04-13 11:55:57 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to builder
+2023-04-13 11:56:00 [INFO] [task_scheduler.cc:195] Sending 64 sample(s) to runner
+2023-04-13 11:56:29 [DEBUG] XGB validation: p-rmse: 0.040531	a-peak@32: 0.992822
+2023-04-13 11:56:29 [DEBUG] XGB iter   0: tr-p-rmse: 0.377652	tr-a-peak@32: 0.949662	tr-rmse: 0.497498	tr-rmse: 0.497498
+2023-04-13 11:56:29 [DEBUG] XGB iter  25: tr-p-rmse: 0.030538	tr-a-peak@32: 0.992859	tr-rmse: 0.575219	tr-rmse: 0.575219
+2023-04-13 11:56:29 [DEBUG] XGB iter  50: tr-p-rmse: 0.030538	tr-a-peak@32: 0.992859	tr-rmse: 0.575219	tr-rmse: 0.575219
+2023-04-13 11:56:29 [DEBUG] XGB stopped. Best iteration: [24] tr-p-rmse:0.03054	tr-a-peak@32:0.99286	tr-rmse:0.57522	tr-rmse:0.57522 
+2023-04-13 11:56:29 [INFO] [task_scheduler.cc:237] [Updated] Task #0: "main"
+2023-04-13 11:56:29 [INFO] [task_scheduler.cc:320] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2415919104 |      1 |     47784.3078 |      50.5588 |               50.5588 |    512 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 512
+Total latency (us): 50.5588
+
+2023-04-13 11:56:29 [INFO] [task_scheduler.cc:180] TaskScheduler picks Task #0: "main"
+2023-04-13 11:56:49 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to builder
+2023-04-13 11:56:53 [INFO] [task_scheduler.cc:195] Sending 64 sample(s) to runner
+2023-04-13 11:57:22 [DEBUG] XGB validation: p-rmse: 0.079415	a-peak@32: 0.984263
+2023-04-13 11:57:22 [INFO] [task_scheduler.cc:237] [Updated] Task #0: "main"
+2023-04-13 11:57:22 [INFO] [task_scheduler.cc:320] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2415919104 |      1 |     47784.3078 |      50.5588 |               50.5588 |    576 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 576
+Total latency (us): 50.5588
+
+2023-04-13 11:57:22 [INFO] [task_scheduler.cc:180] TaskScheduler picks Task #0: "main"
+2023-04-13 11:57:43 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to builder
+2023-04-13 11:57:47 [INFO] [task_scheduler.cc:195] Sending 64 sample(s) to runner
+2023-04-13 11:58:16 [DEBUG] XGB validation: p-rmse: 0.066910	a-peak@32: 0.974071
+2023-04-13 11:58:16 [DEBUG] XGB iter   0: tr-p-rmse: 0.358999	tr-a-peak@32: 0.940174	tr-rmse: 0.506240	tr-rmse: 0.506240
+2023-04-13 11:58:16 [DEBUG] XGB iter  25: tr-p-rmse: 0.030637	tr-a-peak@32: 0.974737	tr-rmse: 0.583588	tr-rmse: 0.583588
+2023-04-13 11:58:16 [DEBUG] XGB iter  50: tr-p-rmse: 0.030637	tr-a-peak@32: 0.974737	tr-rmse: 0.583588	tr-rmse: 0.583588
+2023-04-13 11:58:16 [DEBUG] XGB stopped. Best iteration: [22] tr-p-rmse:0.03064	tr-a-peak@32:0.97474	tr-rmse:0.58359	tr-rmse:0.58359 
+2023-04-13 11:58:16 [INFO] [task_scheduler.cc:237] [Updated] Task #0: "main"
+2023-04-13 11:58:16 [INFO] [task_scheduler.cc:320] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2415919104 |      1 |     47784.3078 |      50.5588 |               50.5588 |    640 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 640
+Total latency (us): 50.5588
+
+2023-04-13 11:58:16 [INFO] [task_scheduler.cc:180] TaskScheduler picks Task #0: "main"
+2023-04-13 11:58:37 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to builder
+2023-04-13 11:58:41 [INFO] [task_scheduler.cc:195] Sending 64 sample(s) to runner
+2023-04-13 11:59:09 [DEBUG] XGB validation: p-rmse: 0.049571	a-peak@32: 0.990433
+2023-04-13 11:59:09 [INFO] [task_scheduler.cc:237] [Updated] Task #0: "main"
+2023-04-13 11:59:09 [INFO] [task_scheduler.cc:320] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2415919104 |      1 |     47784.3078 |      50.5588 |               50.5588 |    704 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 704
+Total latency (us): 50.5588
+
+2023-04-13 11:59:09 [INFO] [task_scheduler.cc:180] TaskScheduler picks Task #0: "main"
+2023-04-13 11:59:30 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to builder
+2023-04-13 11:59:34 [INFO] [task_scheduler.cc:195] Sending 64 sample(s) to runner
+2023-04-13 12:00:03 [DEBUG] XGB validation: p-rmse: 0.033200	a-peak@32: 0.999654
+2023-04-13 12:00:03 [DEBUG] XGB iter   0: tr-p-rmse: 0.344285	tr-a-peak@32: 0.944783	tr-rmse: 0.513844	tr-rmse: 0.513844
+2023-04-13 12:00:03 [DEBUG] XGB iter  25: tr-p-rmse: 0.029820	tr-a-peak@32: 0.979630	tr-rmse: 0.590685	tr-rmse: 0.590685
+2023-04-13 12:00:03 [DEBUG] XGB iter  50: tr-p-rmse: 0.029820	tr-a-peak@32: 0.979630	tr-rmse: 0.590685	tr-rmse: 0.590685
+2023-04-13 12:00:03 [DEBUG] XGB stopped. Best iteration: [23] tr-p-rmse:0.02982	tr-a-peak@32:0.97963	tr-rmse:0.59068	tr-rmse:0.59068 
+2023-04-13 12:00:03 [INFO] [task_scheduler.cc:237] [Updated] Task #0: "main"
+2023-04-13 12:00:03 [INFO] [task_scheduler.cc:320] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2415919104 |      1 |     47784.3078 |      50.5588 |               50.5588 |    768 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 768
+Total latency (us): 50.5588
+
+2023-04-13 12:00:03 [INFO] [task_scheduler.cc:180] TaskScheduler picks Task #0: "main"
+2023-04-13 12:00:23 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to builder
+2023-04-13 12:00:27 [INFO] [task_scheduler.cc:195] Sending 64 sample(s) to runner
+2023-04-13 12:00:56 [DEBUG] XGB validation: p-rmse: 0.042661	a-peak@32: 0.988442
+2023-04-13 12:00:56 [INFO] [task_scheduler.cc:237] [Updated] Task #0: "main"
+2023-04-13 12:00:56 [INFO] [task_scheduler.cc:320] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2415919104 |      1 |     47784.3078 |      50.5588 |               50.5588 |    832 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 832
+Total latency (us): 50.5588
+
+2023-04-13 12:00:56 [INFO] [task_scheduler.cc:180] TaskScheduler picks Task #0: "main"
+2023-04-13 12:01:17 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to builder
+2023-04-13 12:01:21 [INFO] [task_scheduler.cc:195] Sending 64 sample(s) to runner
+2023-04-13 12:01:50 [DEBUG] XGB validation: p-rmse: 0.098117	a-peak@32: 0.998966
+2023-04-13 12:01:50 [INFO] [task_scheduler.cc:237] [Updated] Task #0: "main"
+2023-04-13 12:01:50 [INFO] [task_scheduler.cc:320] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2415919104 |      1 |     47784.3078 |      50.5588 |               50.5588 |    896 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 896
+Total latency (us): 50.5588
+
+2023-04-13 12:01:50 [INFO] [task_scheduler.cc:180] TaskScheduler picks Task #0: "main"
+2023-04-13 12:02:11 [INFO] [task_scheduler.cc:193] Sending 64 sample(s) to builder
+2023-04-13 12:02:16 [INFO] [task_scheduler.cc:195] Sending 64 sample(s) to runner
+2023-04-13 12:02:46 [DEBUG] XGB validation: p-rmse: 0.064549	a-peak@32: 0.982230
+2023-04-13 12:02:46 [DEBUG] XGB iter   0: tr-p-rmse: 0.331694	tr-a-peak@32: 0.963429	tr-rmse: 0.519980	tr-rmse: 0.519980
+2023-04-13 12:02:46 [DEBUG] XGB iter  25: tr-p-rmse: 0.029434	tr-a-peak@32: 0.988747	tr-rmse: 0.596472	tr-rmse: 0.596471
+2023-04-13 12:02:46 [DEBUG] XGB iter  50: tr-p-rmse: 0.029433	tr-a-peak@32: 0.988747	tr-rmse: 0.596473	tr-rmse: 0.596473
+2023-04-13 12:02:46 [DEBUG] XGB iter  75: tr-p-rmse: 0.029433	tr-a-peak@32: 0.988747	tr-rmse: 0.596473	tr-rmse: 0.596473
+2023-04-13 12:02:46 [DEBUG] XGB stopped. Best iteration: [26] tr-p-rmse:0.02943	tr-a-peak@32:0.98875	tr-rmse:0.59647	tr-rmse:0.59647 
+2023-04-13 12:02:46 [INFO] [task_scheduler.cc:237] [Updated] Task #0: "main"
+2023-04-13 12:02:46 [INFO] [task_scheduler.cc:320] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2415919104 |      1 |     47784.3078 |      50.5588 |               50.5588 |    960 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 960
+Total latency (us): 50.5588
+
+2023-04-13 12:02:46 [INFO] [task_scheduler.cc:180] TaskScheduler picks Task #0: "main"
+2023-04-13 12:03:06 [INFO] [task_scheduler.cc:193] Sending 40 sample(s) to builder
+2023-04-13 12:03:09 [INFO] [task_scheduler.cc:195] Sending 40 sample(s) to runner
+2023-04-13 12:03:27 [DEBUG] XGB validation: p-rmse: 0.057018	a-peak@32: 0.999949
+2023-04-13 12:03:27 [INFO] [task_scheduler.cc:237] [Updated] Task #0: "main"
+2023-04-13 12:03:27 [INFO] [task_scheduler.cc:320] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2415919104 |      1 |     47784.3078 |      50.5588 |               50.5588 |   1000 |      
+---------------------------------------------------------------------------------------------------------
+Total trials: 1000
+Total latency (us): 50.5588
+
+2023-04-13 12:03:27 [INFO] [task_scheduler.cc:260] Task #0 has finished. Remaining task(s): 0
+2023-04-13 12:03:27 [INFO] [task_scheduler.cc:320] 
+ ID | Name |       FLOP | Weight | Speed (GFLOPS) | Latency (us) | Weighted Latency (us) | Trials | Done 
+---------------------------------------------------------------------------------------------------------
+  0 | main | 2415919104 |      1 |     47784.3078 |      50.5588 |               50.5588 |   1000 |    Y 
+---------------------------------------------------------------------------------------------------------
+Total trials: 1000
+Total latency (us): 50.5588
+
