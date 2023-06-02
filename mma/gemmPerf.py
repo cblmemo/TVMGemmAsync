@@ -68,7 +68,7 @@ b_cublas = tvm.nd.array(b_np.astype("float16"), dev)
 c_cublas = tvm.nd.array(np.zeros((M, N), dtype=C_cublas.dtype), dev)
 f_cublas(a_cublas, b_cublas, c_cublas)
 
-time_f = rt_mod.time_evaluator(rt_mod.entry_name, dev=tvm.cuda(0), number=100)
+time_f = rt_mod.time_evaluator(rt_mod.entry_name, dev=tvm.cuda(0), number=10)
 time = time_f(a_tvm, b_tvm, c_tvm).mean
 
 flop = (M * N * K + M * N) * 2
@@ -78,4 +78,5 @@ print("%.9f" % time)
 try:
     tvm.testing.assert_allclose(c_cublas.numpy(), c_tvm.numpy(), rtol=1e-2)
 except:
-    print("TVM and cuBLAS results do not match")
+    print("FAILED")
+    print(traceback.format_exc())

@@ -1,0 +1,25 @@
+105654.80
+0.000548966
+FAILED
+Traceback (most recent call last):
+  File "gemmPerf.py", line 78, in <module>
+    tvm.testing.assert_allclose(c_cublas.numpy(), c_tvm.numpy(), rtol=1e-2)
+  File "/home/txia/pr_tvm/python/tvm/testing/utils.py", line 120, in assert_allclose
+    np.testing.assert_allclose(actual, desired, rtol=rtol, atol=atol, verbose=True)
+  File "/usr/local/lib/python3.8/dist-packages/numpy/testing/_private/utils.py", line 1528, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+  File "/usr/local/lib/python3.8/dist-packages/numpy/testing/_private/utils.py", line 842, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Not equal to tolerance rtol=0.01, atol=1e-07
+
+Mismatched elements: 804 / 9437184 (0.00852%)
+Max absolute difference: 10.5
+Max relative difference: 0.01386
+ x: array([[750.5, 755. , 759. , ..., 749. , 741. , 757. ],
+       [750. , 764.5, 768.5, ..., 767.5, 756.5, 769. ],
+       [755. , 758. , 764. , ..., 754. , 749. , 774.5],...
+ y: array([[751.5, 757. , 761.5, ..., 747. , 738. , 756. ],
+       [753. , 763.5, 768.5, ..., 761.5, 756.5, 769. ],
+       [754. , 758. , 760.5, ..., 751.5, 749. , 776.5],...
+
