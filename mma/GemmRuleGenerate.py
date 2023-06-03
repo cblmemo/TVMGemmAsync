@@ -21,7 +21,7 @@ from tvm.meta_schedule.testing.space_generation import (
     print_sketches,
 )
 
-from util import get_mm_dirn
+from util import get_mm_dirn, rdir, dbn
 
 
 def multi_level_tiling_tensor_core(
@@ -121,7 +121,7 @@ def initializer():
 db = ms.tir_integration.tune_tir(
     mod=GemmModule,
     target="nvidia/geforce-rtx-3080",
-    work_dir=f"./db/{get_mm_dirn(M, N, K, t)}",
+    work_dir=f"./{dbn}/{get_mm_dirn(M, N, K, t)}",
     max_trials_global=t,
     builder=LocalBuilder(f_build="meta_schedule.builder.async_build", initializer=initializer),
     space=ms.space_generator.PostOrderApply(
@@ -132,15 +132,15 @@ db = ms.tir_integration.tune_tir(
 )
 sch = db.query_schedule(GemmModule, target=Target("nvidia/geforce-rtx-3080"), workload_name="main")
 
-os.makedirs(f"outputs/{get_mm_dirn(M, N, K, t)}", exist_ok=True)
+os.makedirs(f"{rdir}/{get_mm_dirn(M, N, K, t)}", exist_ok=True)
 
-with open(f"outputs/{get_mm_dirn(M, N, K, t)}/script.py", "w") as f:
+with open(f"{rdir}/{get_mm_dirn(M, N, K, t)}/script.py", "w") as f:
     print(sch.mod.script(), file=f)
-with open(f"outputs/{get_mm_dirn(M, N, K, t)}/lower.py", "w") as f:
+with open(f"{rdir}/{get_mm_dirn(M, N, K, t)}/lower.py", "w") as f:
     print(tvm.lower(sch.mod).script(), file=f)
-with open(f"outputs/{get_mm_dirn(M, N, K, t)}/trace.py", "w") as f:
+with open(f"{rdir}/{get_mm_dirn(M, N, K, t)}/trace.py", "w") as f:
     print(sch.trace, file=f)
 with tvm.transform.PassContext(config={"tir.use_async_copy": 1}):
     rt_mod = tvm.build(sch.mod, target="cuda")
-with open(f"outputs/{get_mm_dirn(M, N, K, t)}/cuda.cu", "w") as f:
+with open(f"{rdir}/{get_mm_dirn(M, N, K, t)}/cuda.cu", "w") as f:
     print(rt_mod.imported_modules[0].get_source(), file=f)
