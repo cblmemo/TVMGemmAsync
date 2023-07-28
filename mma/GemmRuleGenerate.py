@@ -44,11 +44,11 @@ def multi_level_tiling_tensor_core(
     return ms.schedule_rule.MultiLevelTilingTensorCore(
         intrin_groups=[
             {
-                "init": "m16n8k8_init",
-                "load_a": "m16n8k8_load_A_row_major",
-                "load_b": "m16n8k8_load_B_row_major",
-                "compute": "m16n8k8_sync",
-                "store": "m16n8k8_store_C_row_major",
+                "init": "mma_init_m16n8k8_f16",
+                "load_a": "mma_load_m16n8k8_f16_A_shared_dyn",
+                "load_b": "mma_load_m16n8k8_f16_B_shared_dyn",
+                "compute": "mma_sync_m16n8k8_f16f16f16",
+                "store": "mma_store_m16n8k8_f16_global",
             },
         ],
         structure="SSSRRSRS",
